@@ -17,7 +17,7 @@ export const profile = {
 export const stats = [
   { label: 'CGPA', value: 7, decimals: 2, suffix: '' },
   { label: 'MPC', value: 88.6, decimals: 1, suffix: '%' },
-  { label: 'Projects', value: 2, decimals: 0, suffix: '' },
+  { label: 'Projects', value: 3, decimals: 0, suffix: '' },
   { label: 'Class X GPA', value: 10, decimals: 0, suffix: '/10' },
 ]
 
@@ -43,6 +43,23 @@ export const education = [
 ]
 
 export const projects = [
+  {
+    title: 'SplitSmart',
+    emoji: '💸',
+    type: 'Full-Stack',
+    tech: ['React', 'Node.js', 'Express.js', 'MySQL', 'Tailwind CSS', 'Docker'],
+    summary: 'Expense splitter for roommates, friends and trips: groups, smart splits, debt simplification and budgets.',
+    points: [
+      'Built a full-stack expense-sharing app with React 19 (Vite), Tailwind CSS, Node.js, Express 5 and MySQL 8.',
+      'Supports four split types (equal, exact, percentage, shares) and a greedy debt-simplification algorithm that minimises the number of payments.',
+      'Stores all money as integer paise with the largest-remainder method, so shares always add up exactly - no floating-point errors.',
+      'Added confirmed settlements (payer records, receiver confirms) using transactions and per-group locks to prevent double settling.',
+      'Built groups with invite codes and admin/member roles, budgets with 80% / 100% alerts, notifications, and dashboard charts with Recharts.',
+      'Secured with JWT auth, bcrypt, parameterised SQL, input validation, rate limiting, Helmet and strict CORS.',
+      'Wrote 194 Jest + Supertest tests (about 97% line coverage) plus a Postman/Newman suite; containerised with Docker Compose.',
+    ],
+    github: 'https://github.com/pcharan2006/SplitSmart',
+  },
   {
     title: 'PETVERSE',
     emoji: '🐾',
